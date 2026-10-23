@@ -1,1 +1,16 @@
+body {
+    height: 100vh;
+}
 
+.parent {
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.child {
+    /* background-color: green; */
+    display: flex;
+    gap: 10px;
+}
