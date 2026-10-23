@@ -1,0 +1,71 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.parent {
+    width: 400px;
+    height: 600px;
+    background-color: orange;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.header {
+    width: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    border-radius: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    width: 60%;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+i {
+    cursor: pointer;
+}
+
+body:has(#close:checked) .parent {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+
+body:has(#close:checked) #close {
+    display: block;
+}
