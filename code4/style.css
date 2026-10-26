@@ -1,0 +1,79 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent {
+    background-color: orange;
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    border: 2px solid grey;
+    display: flex;
+    overflow: hidden;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100px;
+    height: 100%;
+    border-right: 2px solid black;
+    align-items: center;
+}
+
+.right {
+    flex: 1;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    margin-right: 220px;
+}
+
+img {
+    border-radius: 100%;
+    margin-top: 50px;
+}
+
+.fa-xmark {
+    margin-left: 250px;
+}
+
+.upper {
+    margin-top: 100px;
+}
+
+input {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.5s easet;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+#close {
+    display: none;
+}
+
+body:has(#close:checked) .parent {
+    display: none;
+}
+
+body:has(#close:checked) #close {
+    display: block;
+}
