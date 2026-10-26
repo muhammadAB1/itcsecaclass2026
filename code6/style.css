@@ -23,7 +23,7 @@ body {
 
 .right {
     width: 100px;
-
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,4 +50,25 @@ body {
 
 img {
     border-radius: 100%;
+}
+
+label {
+    margin-top: -390px;
+    margin-left: 60px;
+}
+
+h1 {
+    transform: translateY(200px);
+}
+
+#close {
+    display: none;
+}
+
+body:has(#close:checked) .parent {
+    display: none;
+}
+
+body:has(#close:checked) #close {
+    display: block;
 }
